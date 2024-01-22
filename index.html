@@ -10,6 +10,23 @@
       .OBJ-1 { border:1px solid #828b93; }
       @font-face { font-family: 'Palatino Linotype'; src: url('wpscripts/wpc1e74235.ttf'); }
     </style>
+    <script type="text/javascript" src="index_files/jquery.js"></script>
+    <script type="text/javascript" src="index_files/jquery.wplightbox.js"></script>
+    <script type="text/javascript" src="index_files/jquery.event.move.js"></script>
+    <script type="text/javascript" src="index_files/jquery.event.swipe.js"></script>
+    <script type="text/javascript" src="index_files/jquery.wpslider.js"></script>
+    <script type="text/javascript" src="index_files/jquery.marquee.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+      $('#slider_10').data('wpslider', new $.fn.wpslider( { g_nDivId:'#slider_10', g_nTransitStyle:2, g_nLoopTime:8000, g_nAnimationTime:7950, g_bPlayAtStart:true, g_bHandleMouseWheel:false, g_strEasing: "linear" } ) );
+      var btnState = [];
+      $('.wplightbox').wplightbox(
+      {"loadBtnSrc":"wpimages/lightbox_load.gif","playBtnSrc":"wpimages/lightbox_play.png","playOverBtnSrc":"wpimages/lightbox_play_over.png","pauseBtnSrc":"wpimages/lightbox_pause.png","pauseOverBtnSrc":"wpimages/lightbox_pause_over.png","border_e":"wpimages/lightbox_e_6.png","border_n":"wpimages/lightbox_n_6.png","border_w":"wpimages/lightbox_w_6.png","border_s":"wpimages/lightbox_s_6.png","border_ne":"wpimages/lightbox_ne_6.png","border_se":"wpimages/lightbox_se_6.png","border_nw":"wpimages/lightbox_nw_6.png","border_sw":"wpimages/lightbox_sw_6.png","closeBtnSrc":"wpimages/lightbox_close_2.png","closeOverBtnSrc":"wpimages/lightbox_close_over_2.png","nextBtnSrc":"wpimages/lightbox_next_2.png","nextOverBtnSrc":"wpimages/lightbox_next_over_2.png","prevBtnSrc":"wpimages/lightbox_prev_2.png","prevOverBtnSrc":"wpimages/lightbox_prev_over_2.png","blankSrc":"wpscripts/blank.gif","bBkgrndClickable":true,"strBkgrndCol":"#000000","nBkgrndOpacity":0.5,"strContentCol":"#ffffff","nContentOpacity":0.8,"strCaptionCol":"#555555","nCaptionOpacity":1.0,"nCaptionType":1,"bCaptionCount":true,"strCaptionFontType":"Tahoma,Serif","strCaptionFontCol":"#ffffff","nCaptionFontSz":15,"bShowPlay":true,"bAnimateOpenClose":true,"nPlayPeriod":2000}
+      );
+      $('#slider_10').data('wpslider').restrictSlides();
+      $("#marq_1_0").marquee();
+      });
+    </script>
   </head>
   <body style="height:860px;background:#00447b;">
     <div id="divMain" style="background:transparent;margin-left:auto;margin-right:auto;position:relative;width:1000px;height:860px;">
@@ -51,13 +68,13 @@
       <map id="map11" name="map11"><area shape="poly" coords="146,49,150,44,150,5,145,1,140,0,9,0,1,6,0,12,0,43,6,50,145,50" href="keramik.html" alt=""></map>
       <img alt="Gomilles Keramikhof -Keramikpolsterei" usemap="#map11" src="index_files/keramik.gif" id="pic_224" style="position:absolute;left:10px;top:287px;width:150px;height:50px;">
       <div id="slider_10" style="position:absolute;left:167px;top:705px;width:825px;height:140px;overflow:hidden;">
-        <div id="slider_10_P1" style="position: absolute; left: -385.726px; right: 0px; width: 825px; height: 140px; display: inline; visibility: inherit; opacity: 1;">
+        <div id="slider_10_P1" style="position: absolute; left: 151.198px; right: 0px; width: 825px; height: 140px;">
           <img alt="" src="index_files/AktWinterStKL.jpg" id="pic_79" style="position:absolute;left:1px;top:2px;width:204px;height:137px;">
           <img alt="" src="index_files/DoppeltischKL.jpg" id="pic_80" style="position:absolute;left:207px;top:2px;width:204px;height:137px;">
           <img alt="" src="index_files/FeenKL.jpg" id="pic_200" style="position:absolute;left:619px;top:2px;width:204px;height:137px;">
           <img alt="" src="index_files/gewellBankKL.jpg" id="pic_201" style="position:absolute;left:413px;top:2px;width:204px;height:137px;">
         </div>
-        <div id="slider_10_P2" style="position: absolute; left: 439.274px; right: 0px; width: 825px; height: 140px; visibility: inherit; display: inline; opacity: 1;">
+        <div id="slider_10_P2" style="position: absolute; left: -673.802px; right: 0px; width: 825px; height: 140px; visibility: inherit; display: inline; opacity: 1;">
           <img alt="" src="index_files/grBankGR.jpg" id="pic_202" style="position:absolute;left:1px;top:2px;width:204px;height:137px;">
           <img alt="" src="index_files/grTisch2gr.jpg" id="pic_203" style="position:absolute;left:207px;top:2px;width:204px;height:137px;">
           <img alt="" src="index_files/grTischGR.jpg" id="pic_204" style="position:absolute;left:413px;top:2px;width:204px;height:137px;">
